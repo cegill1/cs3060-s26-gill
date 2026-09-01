@@ -49,8 +49,8 @@ s1[2:3] # s
 s1[3:5] # su
 s1[4:5] #u
 s1[1:5:2] # os
-s1[:] # Rossum
-s1[::-1] # mussoR
-s1[1::2] # osm
-s1[1::-2] # o
+s1[:] # Rossum, goes through the entire string
+s1[:-2] # Ross, start at 0 and stop at -2, which is 'u'
+s1[::-1] # mussoR, you can remove the :: in this. Telling you to start at 0 and step back -1. 
+s1[1::-2] # o, start at index 1 and step back 2. 'o' because there is nothing at two letters back? We don't wrap to -1?
 s1[0:len(s1):1] # Rossum
