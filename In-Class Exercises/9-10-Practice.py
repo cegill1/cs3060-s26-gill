@@ -61,3 +61,30 @@ if non_member_and_cart_over_100:
     print("Non-member discount: 5% off + free shipping!")
 if non_member_and_cart_under_100:
     print("No discounts available. Sign up for membership!")
+
+# Fully Looping Practice
+cart_total = 120
+is_member - True
+has_coupon = False
+
+# Define all discount rules as a list of dictionaries
+discount_rules: [
+    {"condition": lambda: is_member and cart_total > 100,
+    "message": "Member discount: 20% off + free shipping!"},
+    {"condition": lambda: is_member and cart_total > 50,
+     "message": "Member discount: 10% off + free shipping!"},
+    {"condition": lambda: is_member and cart_total <= 50,
+     "message": "member discount: 5% off!"},
+    {"condition": lambda: not is_member and has_coupon,
+     "message": "Coupon discount: 10% off!"},
+    {"condition": lambda: not is_member and cart_total > 100,
+     "message": "Non-member discount: 5% off + free shipping!"},
+    {"condition": lambda: not is_member and cart_total< 100,
+     "message": "No discounts available. Sign up for membership!"}
+]
+
+# Loop over the rules and print the first applicable discount
+for rule in discount_rules:
+    if rule["condition"]():
+        print(rule["message"])
+        break # stop after the first matching rule
