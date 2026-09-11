@@ -88,3 +88,17 @@ for rule in discount_rules:
     if rule["condition"]():
         print(rule["message"])
         break # stop after the first matching rule
+
+
+# Lambda function example
+# Normal function
+def square(x):
+    return x**2
+
+# Lambda function
+# The function type of the lambda will be whatever's on the left side of the :
+square_lambda = lambda x: x**2
+
+print(square(5))            # This is a str
+print(square_lambda(5))     # This is a str
+
