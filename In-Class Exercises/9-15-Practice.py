@@ -24,7 +24,12 @@ countdown(n)
 
 # Convert Newton-Raphson into recursive form pseudocode
 def newtonRaphson(f, f', x0, tolerance e, max iterations N_max):
-    # error case / base case
+    # error case 
+    if k > N_max then
+        Print "Did not converge within N_max iterations
+        return
+        
+    # base case
     if n <= 0:
         print "Derivative zero. no solution found"
         exit
