@@ -18,7 +18,7 @@ def bisection(a, b, tol=1e-6, max_iter=100):
 
 # Try it
 root = bisection(1, 2)
-print("Approx root: ", root)
+print("Approx root: ", root) # returns 1.5213804244995117
 
 # Turn into a while loop variant for funsies?
 def bisection(a, b, tol=1e-6, max_iter=100):
