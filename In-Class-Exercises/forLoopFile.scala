@@ -1,5 +1,5 @@
 object ForLoopFile:
-    def forLoop(args: Array[String])= {
+    def forLoop(args: Array[String])=
         println("for loop using Java-style iteration")
 
         for (i <- 0 until args.length) do
