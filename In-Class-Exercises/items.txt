@@ -1,0 +1,4 @@
+computer  id1  100
+pen   id2      5
+computer   id3 200
+pen   id4     7
